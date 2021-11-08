@@ -10,6 +10,8 @@
 		896CFAD62737F8DE00E0EF6D /* TestPod.docc in Sources */ = {isa = PBXBuildFile; fileRef = 896CFAD52737F8DE00E0EF6D /* TestPod.docc */; };
 		896CFAD72737F8DE00E0EF6D /* TestPod.h in Headers */ = {isa = PBXBuildFile; fileRef = 896CFAD42737F8DE00E0EF6D /* TestPod.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		896CFADF2739CA6200E0EF6D /* TestPodCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 896CFADD2739CA6200E0EF6D /* TestPodCoreData.xcdatamodeld */; };
+		896CFB022739D07400E0EF6D /* TestCoreData.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 896CFB012739D07400E0EF6D /* TestCoreData.podspec */; };
+		896CFB052739D08A00E0EF6D /* TestPodCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 896CFB032739D08A00E0EF6D /* TestPodCoreData.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +19,8 @@
 		896CFAD42737F8DE00E0EF6D /* TestPod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPod.h; sourceTree = "<group>"; };
 		896CFAD52737F8DE00E0EF6D /* TestPod.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = TestPod.docc; sourceTree = "<group>"; };
 		896CFADE2739CA6200E0EF6D /* TestPodCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestPodCoreData.xcdatamodel; sourceTree = "<group>"; };
+		896CFB012739D07400E0EF6D /* TestCoreData.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestCoreData.podspec; sourceTree = "<group>"; };
+		896CFB042739D08A00E0EF6D /* TestPodCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestPodCoreData.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,8 @@
 		896CFAC72737F8DE00E0EF6D = {
 			isa = PBXGroup;
 			children = (
+				896CFB012739D07400E0EF6D /* TestCoreData.podspec */,
+				896CFB002739D02100E0EF6D /* Resources */,
 				896CFAD32737F8DE00E0EF6D /* TestPod */,
 				896CFAD22737F8DE00E0EF6D /* Products */,
 			);
@@ -54,6 +60,14 @@
 				896CFADD2739CA6200E0EF6D /* TestPodCoreData.xcdatamodeld */,
 			);
 			path = TestPod;
+			sourceTree = "<group>";
+		};
+		896CFB002739D02100E0EF6D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				896CFB032739D08A00E0EF6D /* TestPodCoreData.xcdatamodeld */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				896CFB022739D07400E0EF6D /* TestCoreData.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				896CFADF2739CA6200E0EF6D /* TestPodCoreData.xcdatamodeld in Sources */,
+				896CFB052739D08A00E0EF6D /* TestPodCoreData.xcdatamodeld in Sources */,
 				896CFAD62737F8DE00E0EF6D /* TestPod.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,6 +368,17 @@
 			);
 			currentVersion = 896CFADE2739CA6200E0EF6D /* TestPodCoreData.xcdatamodel */;
 			path = TestPodCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		896CFB032739D08A00E0EF6D /* TestPodCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				896CFB042739D08A00E0EF6D /* TestPodCoreData.xcdatamodel */,
+			);
+			currentVersion = 896CFB042739D08A00E0EF6D /* TestPodCoreData.xcdatamodel */;
+			name = TestPodCoreData.xcdatamodeld;
+			path = TestPod/TestPodCoreData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
