@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
 
 spec.name         = 'TestCoreData'
 spec.requires_arc = true
-spec.version      = '0.0.2'
+spec.version      = '0.0.4'
 spec.summary      = 'Test A CocaPod Library written in swift to share Auth between our Applications'
 spec.description  = 'Test CocoaPods library helps us to use Test in Test and Test - VFAuthKeyCloak A CocaPod Library written in swift to share Auth between our Applications'
 
