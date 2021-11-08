@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		896CFAD62737F8DE00E0EF6D /* TestPod.docc in Sources */ = {isa = PBXBuildFile; fileRef = 896CFAD52737F8DE00E0EF6D /* TestPod.docc */; };
 		896CFAD72737F8DE00E0EF6D /* TestPod.h in Headers */ = {isa = PBXBuildFile; fileRef = 896CFAD42737F8DE00E0EF6D /* TestPod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		896CFADF2739CA6200E0EF6D /* TestPodCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 896CFADD2739CA6200E0EF6D /* TestPodCoreData.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		896CFAD12737F8DE00E0EF6D /* TestPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		896CFAD42737F8DE00E0EF6D /* TestPod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPod.h; sourceTree = "<group>"; };
 		896CFAD52737F8DE00E0EF6D /* TestPod.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = TestPod.docc; sourceTree = "<group>"; };
+		896CFADE2739CA6200E0EF6D /* TestPodCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestPodCoreData.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 			children = (
 				896CFAD42737F8DE00E0EF6D /* TestPod.h */,
 				896CFAD52737F8DE00E0EF6D /* TestPod.docc */,
+				896CFADD2739CA6200E0EF6D /* TestPodCoreData.xcdatamodeld */,
 			);
 			path = TestPod;
 			sourceTree = "<group>";
@@ -132,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				896CFADF2739CA6200E0EF6D /* TestPodCoreData.xcdatamodeld in Sources */,
 				896CFAD62737F8DE00E0EF6D /* TestPod.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +343,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		896CFADD2739CA6200E0EF6D /* TestPodCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				896CFADE2739CA6200E0EF6D /* TestPodCoreData.xcdatamodel */,
+			);
+			currentVersion = 896CFADE2739CA6200E0EF6D /* TestPodCoreData.xcdatamodel */;
+			path = TestPodCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 896CFAC82737F8DE00E0EF6D /* Project object */;
 }
