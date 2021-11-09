@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		896CFAD62737F8DE00E0EF6D /* TestPod.docc in Sources */ = {isa = PBXBuildFile; fileRef = 896CFAD52737F8DE00E0EF6D /* TestPod.docc */; };
 		896CFAD72737F8DE00E0EF6D /* TestPod.h in Headers */ = {isa = PBXBuildFile; fileRef = 896CFAD42737F8DE00E0EF6D /* TestPod.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		896CFB022739D07400E0EF6D /* TestCoreData.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 896CFB012739D07400E0EF6D /* TestCoreData.podspec */; };
 		896CFB0C2739D1D900E0EF6D /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 896CFB0A2739D1D900E0EF6D /* CoreDataModel.xcdatamodeld */; };
+		896CFB15273A7F6700E0EF6D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896CFB14273A7F6700E0EF6D /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		896CFAD12737F8DE00E0EF6D /* TestPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		896CFAD42737F8DE00E0EF6D /* TestPod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPod.h; sourceTree = "<group>"; };
-		896CFAD52737F8DE00E0EF6D /* TestPod.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = TestPod.docc; sourceTree = "<group>"; };
 		896CFB012739D07400E0EF6D /* TestCoreData.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestCoreData.podspec; sourceTree = "<group>"; };
 		896CFB0B2739D1D900E0EF6D /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		896CFB14273A7F6700E0EF6D /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +35,8 @@
 		896CFAC72737F8DE00E0EF6D = {
 			isa = PBXGroup;
 			children = (
-				896CFB112739D25F00E0EF6D /* Resource */,
+				896CFB14273A7F6700E0EF6D /* CoreDataManager.swift */,
+				896CFB0A2739D1D900E0EF6D /* CoreDataModel.xcdatamodeld */,
 				896CFB012739D07400E0EF6D /* TestCoreData.podspec */,
 				896CFAD32737F8DE00E0EF6D /* TestPod */,
 				896CFAD22737F8DE00E0EF6D /* Products */,
@@ -54,17 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				896CFAD42737F8DE00E0EF6D /* TestPod.h */,
-				896CFAD52737F8DE00E0EF6D /* TestPod.docc */,
 			);
 			path = TestPod;
-			sourceTree = "<group>";
-		};
-		896CFB112739D25F00E0EF6D /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				896CFB0A2739D1D900E0EF6D /* CoreDataModel.xcdatamodeld */,
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +102,7 @@
 				TargetAttributes = {
 					896CFAD02737F8DE00E0EF6D = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 					};
 				};
 			};
@@ -147,8 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				896CFB15273A7F6700E0EF6D /* CoreDataManager.swift in Sources */,
 				896CFB0C2739D1D900E0EF6D /* CoreDataModel.xcdatamodeld in Sources */,
-				896CFAD62737F8DE00E0EF6D /* TestPod.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +273,7 @@
 		896CFADB2737F8DE00E0EF6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -300,6 +294,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -308,6 +303,7 @@
 		896CFADC2737F8DE00E0EF6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
