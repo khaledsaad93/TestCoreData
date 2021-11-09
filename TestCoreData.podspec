@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
 
 spec.name         = 'TestCoreData'
 spec.requires_arc = true
-spec.version      = '0.0.4'
+spec.version      = '0.0.5'
 spec.summary      = 'Test A CocaPod Library written in swift to share Auth between our Applications'
 spec.description  = 'Test CocoaPods library helps us to use Test in Test and Test - VFAuthKeyCloak A CocaPod Library written in swift to share Auth between our Applications'
 
@@ -22,10 +22,10 @@ spec.author       = { "VodafoneEgypt" => "k.m.saad@outlook.com" }
 spec.resources = "Resources/*.xcdatamodel"
 
 spec.ios.deployment_target = '10.0'
-spec.source_files  = "TestCoreData/**/*.{h,m,swift,xcdatamodel}"
+spec.source_files  = "TestPod/**/*.{h,m,swift,xcdatamodel}"
 
 spec.resource_bundles = {
-    'VFAuthKeyCloak' => ['TestCoreData/**/*.xcdatamodeld']
+    'VFAuthKeyCloak' => ['TestPod/Resource/CoreDataModel.xcdatamodeld']
 }
 
 spec.frameworks = 'CoreData', 'Foundation'
